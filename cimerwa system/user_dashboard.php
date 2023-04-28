@@ -23,21 +23,21 @@
          <span class="tooltip">Dashboard</span>
       </li>
       <li>
-       <a href="#">
+       <a href="file.php">
        <i class='bx bx-folder' ></i>
          <span class="links_name">Uploaded Files</span>
        </a>
        <span class="tooltip">Upload Files</span>
      </li>
      <li>
-       <a href="#">
+       <a href="raw.php">
          <i class='bx bx-chat' ></i>
          <span class="links_name">Fill Report</span>
        </a>
        <span class="tooltip">Fill Report</span>
      </li>
      <li class="profile">
-      <a href="#">
+      <a href="logout.php">
         <i class='bx bx-log-out' id="log_out" ></i>
         <span class="links_name">Logout</span>
       </a>
@@ -47,7 +47,9 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text">Dashboard</div>
+      <div class="text"></div>
+      <div class="text text-center w-100">Dashboard</div>
+
   </section>
 
   <script src="script2.js"></script>

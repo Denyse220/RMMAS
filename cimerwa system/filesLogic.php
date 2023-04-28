@@ -1,5 +1,7 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'file-management');
+
+include('config.php');
+
 if (isset($_POST['save'])) { 
     $filename = $_FILES['myfile']['name'];
     $destination = 'uploads/' . $filename;
@@ -9,7 +11,7 @@ if (isset($_POST['save'])) {
 
     if (!in_array($extension, ['zip', 'pdf', 'docx','xls'])) {
         echo "You file extension must be .zip, .pdf or .docx";
-    } elseif ($_FILES['myfile']['size'] > 1000000) { 
+    } elseif ($_FILES['myfile']['size'] > 2000000) {
         echo "File too large!";
     } else {
         if (move_uploaded_file($file, $destination)) {

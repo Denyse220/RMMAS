@@ -1,3 +1,4 @@
+
 <?php
 @include 'config.php';
 
@@ -19,12 +20,15 @@ if(isset($_POST['submit'])){
 
     if($row['user_type'] == 'admin'){
         $_SESSION['admin_name']= $row['name'];
-        header('location:dashboard.html');
+        // header('location:dashboard.html');
+        header('location:raw.php');
 
     }
     elseif($row['user_type'] == 'user'){
         $_SESSION['user_name']= $row['name'];
-        header('location:report-create.php');
+        // header('location:report-create.php');
+        header('location:raw.php');
+        
 
     }else {
         $error[]='incorrect email or password!';
